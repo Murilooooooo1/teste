@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio Pessoal</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background-color: #1e120d;
+            color: #fff;
+        }
+
+        header {
+            background-color: #2c1a15;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            color: #e0a060;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: auto;
+            padding: 2rem;
+        }
+
+        .sobre {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            margin-bottom: 3rem;
+        }
+
+        .sobre img {
+            max-width: 300px;
+            border-radius: 10px;
+        }
+
+        .sobre-texto {
+            flex: 1;
+        }
+
+        .habilidades, .projetos, .contato {
+            margin-bottom: 3rem;
+        }
+
+        .habilidades ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .habilidades li {
+            background: #3c2a23;
+            margin-bottom: 0.5rem;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+        }
+
+        .projetos-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        .projeto {
+            background-color: #3c2a23;
+            padding: 1rem;
+            border-radius: 8px;
+            width: calc(33% - 1rem);
+            box-sizing: border-box;
+        }
+
+        .projeto img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        .contato a {
+            margin-right: 1rem;
+            color: #e0a060;
+            text-decoration: none;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .sobre {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .projetos-container {
+                flex-direction: column;
+            }
+
+            .projeto {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Murilo R. Tessarini</h1>
+        <p>PORTIFÓLIO</p>
+    </header>
+
+    <div class="container">
+        <section class="sobre">
+            <img src="murilo.jpeg">
+            <div class="sobre-texto">
+                <h2>SOBRE MIM</h2>
+                <p>Sou um cara de quaaase 17 anos, apaixonado por desenvolvimento pessoal e tudo o que envolve evoluir como ser humano. Acredito que cuidar da mente e do corpo é essencial, por isso dou muito valor à saúde e às atividades físicas, elas fazem parte da minha rotina e do meu estilo de vida.
+
+Gosto de estar em paz comigo mesmo e com o mundo à minha volta. Tenho uma energia alegre e positiva, e busco sempre crescer, aprendendo a levar a vida com propósitos.</p>
+            </div>
+        </section>
+
+        <section class="habilidades">
+            <h2>Habilidades</h2>
+            <ul>
+                <li>Atividades Fisicas</li>
+                <li>Autodesenvolvimento</li>
+                <li>Tomada de decisão</li>
+                <li>Comunicação</li>
+            </ul>
+        </section>
+
+        <section class="projetos">
+    <h2>Projetos</h2>
+    <div class="projetos-container">
+        <div class="projeto">
+            <img src="ecoclear.png" alt="Projeto Eco Clear">
+            <h3>Projeto 1: Eco Clear</h3>
+            <p>Ferramenta de monitoramento ambiental que visa transformar a indústria para um futuro mais limpo.</p>
+        </div>
+        <div class="projeto">
+            <img src="cadastro.png" alt="Cadastro de Usuários">
+            <h3>Projeto 2: Cadastro de Usuários</h3>
+            <p>Sistema de registro com campos para e-mail, senha e números de contato.</p>
+        </div>
+        <div class="projeto">
+            <img src="quimica.png" alt="Química Orgânica">
+            <h3>Projeto 3: Química Orgânica</h3>
+            <p>Aplicativo educativo explicando os fundamentos da química orgânica com imagens ilustrativas.</p>
+        </div>
+    </div>
+</section>
+
+        <section class="contato">
+            <h2>Contato</h2>
+            <a href="https://@gmail.com">📧 Email</a>
+      <a href="https://instagram.com/seuusuario" target="_blank">📷 Instagram</a>
+        </section>
+    </div>
+</body>
+</html>
